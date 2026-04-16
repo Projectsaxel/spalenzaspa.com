@@ -279,11 +279,12 @@ main {
   padding-block: 0.55rem;
   border-radius: var(--radius-pill);
   background: var(--color-cta);
-  color: var(--color-white);
+  color: var(--color-text-dark);
 }
 
 .nav-link-cta:hover {
   background: var(--color-cta-hover);
+  color: var(--color-text-dark);
 }
 
 .nav-item-has-children {
@@ -432,14 +433,20 @@ summary.nav-link-parent::after {
 
 .btn-primary {
   background: var(--color-cta);
-  color: var(--color-white);
+  color: var(--color-text-dark);
   border-color: var(--color-cta);
 }
 
 .btn-primary:hover {
   background: var(--color-cta-hover);
   border-color: var(--color-cta-hover);
+  color: var(--color-text-dark);
   text-decoration: none;
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid var(--color-text-dark);
+  outline-offset: 2px;
 }
 
 .btn-secondary {
