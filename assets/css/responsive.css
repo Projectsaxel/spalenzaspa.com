@@ -1,0 +1,133 @@
+/* Mobile-first adjustments */
+
+@media (max-width: 767px) {
+  .header-inner {
+    padding-block: 0.75rem;
+  }
+
+  .site-nav {
+    position: absolute;
+    inset-inline: 0;
+    top: 100%;
+    background: rgba(247, 243, 238, 0.98);
+    border-bottom: 1px solid rgba(221, 210, 199, 0.9);
+    transform: translateY(-4px);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 150ms ease-out,
+      transform 150ms ease-out,
+      visibility 150ms ease-out;
+  }
+
+  .site-header.is-nav-open .site-nav {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem 1.25rem 1rem;
+    gap: 0.3rem;
+  }
+
+  .nav-item-has-children {
+    width: 100%;
+  }
+
+  .nav-item-has-children > details.nav-dropdown {
+    width: 100%;
+  }
+
+  .nav-item-has-children > details.nav-dropdown > summary.nav-link-parent {
+    width: 100%;
+    padding-block: 0.35rem;
+  }
+
+  .nav-submenu {
+    position: static;
+    border-radius: 0.75rem;
+    border-width: 0;
+    box-shadow: none;
+    background: transparent;
+    max-height: none;
+    overflow: visible;
+    padding: 0;
+    margin-top: 0.25rem;
+  }
+
+  /* Mobile: <details> controls visibility */
+  .nav-item-has-children > details.nav-dropdown:not([open]) > .nav-submenu {
+    display: none;
+  }
+
+  .nav-submenu .nav-link {
+    padding: 0.25rem 0.5rem 0.25rem 1.25rem;
+    font-size: 0.82rem;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .page-hero {
+    padding-block: 2.5rem;
+  }
+
+  .page-title {
+    font-size: 1.75rem;
+  }
+
+  .section-kicker {
+    font-size: var(--font-size-xs);
+    letter-spacing: 0.14em;
+  }
+
+  .page-service .section-kicker {
+    font-size: var(--font-size-xl);
+  }
+
+  .page-service .section-title {
+    font-size: var(--font-size-lg);
+  }
+
+  .split {
+    flex-direction: column;
+  }
+
+  .grid--3,
+  .grid--2 {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-question {
+    font-size: var(--font-size-base);
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid--3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-inner {
+    grid-template-columns: 1.3fr 1fr 1fr;
+  }
+}
+
