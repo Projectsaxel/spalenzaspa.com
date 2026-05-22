@@ -194,7 +194,7 @@
 
 .navbar .navbar-nav .nav-item.btn-appointment .nav-link {
   background: #938350 !important;
-  color: #000 !important;
+  color: #fff !important;
   padding: 11px 30px !important;
   border-radius: 25px !important;
   text-transform: uppercase !important;
@@ -202,8 +202,9 @@
 }
 
 .navbar .navbar-nav .nav-item.btn-appointment .nav-link:hover {
-  color: #7d3c92 !important;
+  color: #000 !important;
   background-color: transparent !important;
+  border-color: #7d3c92 !important;
 }
 
 @media (max-width: 991.98px) {
