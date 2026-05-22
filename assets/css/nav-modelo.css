@@ -188,6 +188,11 @@
   color: #938350 !important;
 }
 
+.navbar .navbar-nav .nav-item:not(.btn-appointment) .nav-link:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
+}
+
 .navbar .navbar-nav .nav-item.btn-appointment {
   margin-left: 15px;
 }
