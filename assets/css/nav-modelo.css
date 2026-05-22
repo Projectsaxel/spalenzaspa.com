@@ -269,3 +269,20 @@
     margin-left: 5px;
   }
 }
+
+/* Prioridade máxima: hover dos botões com texto PRETO (não branco) */
+a.btn.btn-primary:hover,
+a.btn.btn-primary:focus,
+a.btn.btn-primary:focus-visible,
+a.btn.btn-primary:active,
+a.btn.btn-secondary:hover,
+a.btn.btn-secondary:focus,
+a.btn.btn-secondary:focus-visible,
+a.btn.btn-secondary:active,
+.btn.btn-primary:hover,
+.btn.btn-secondary:hover,
+.btn-primary:hover,
+.btn-secondary:hover {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+}

@@ -480,12 +480,18 @@ summary.nav-link-parent::after {
 
 .btn-primary:hover,
 .btn-primary:focus-visible,
+.btn-primary:active,
 a.btn-primary:hover,
-a.btn-primary:focus-visible {
-  background-color: transparent !important;
+a.btn-primary:focus-visible,
+a.btn-primary:active,
+a.btn.btn-primary:hover,
+a.btn.btn-primary:focus-visible,
+a.btn.btn-primary:active {
+  background-color: #938350 !important;
   background-image: none !important;
   border-color: var(--color-cta-border) !important;
   color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
   text-decoration: none !important;
 }
 
@@ -503,12 +509,18 @@ a.btn-primary:focus-visible {
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible,
+.btn-secondary:active,
 a.btn-secondary:hover,
-a.btn-secondary:focus-visible {
-  background-color: transparent !important;
+a.btn-secondary:focus-visible,
+a.btn-secondary:active,
+a.btn.btn-secondary:hover,
+a.btn.btn-secondary:focus-visible,
+a.btn.btn-secondary:active {
+  background-color: #938350 !important;
   background-image: none !important;
   border-color: var(--color-cta-border) !important;
   color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
   text-decoration: none !important;
 }
 
