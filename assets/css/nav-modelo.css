@@ -183,8 +183,8 @@
   display: inline-block;
 }
 
-.navbar .navbar-nav .nav-item.active .nav-link,
-.navbar .navbar-nav .nav-link:hover {
+.navbar .navbar-nav .nav-item.active:not(.btn-appointment) .nav-link,
+.navbar .navbar-nav .nav-item:not(.btn-appointment) .nav-link:hover {
   color: #938350 !important;
 }
 
@@ -201,10 +201,13 @@
   border: 2px solid #7d3c92 !important;
 }
 
-.navbar .navbar-nav .nav-item.btn-appointment .nav-link:hover {
+.navbar .navbar-nav .nav-item.btn-appointment .nav-link:hover,
+.navbar .navbar-nav .nav-item.btn-appointment .nav-link:focus-visible {
   color: #000 !important;
   background-color: transparent !important;
+  background-image: none !important;
   border-color: #7d3c92 !important;
+  text-decoration: none !important;
 }
 
 @media (max-width: 991.98px) {

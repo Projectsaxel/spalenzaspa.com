@@ -478,11 +478,15 @@ summary.nav-link-parent::after {
   border-radius: 25px;
 }
 
-.btn-primary:hover {
-  background: var(--color-cta-hover) !important;
+.btn-primary:hover,
+.btn-primary:focus-visible,
+a.btn-primary:hover,
+a.btn-primary:focus-visible {
+  background-color: transparent !important;
+  background-image: none !important;
   border-color: var(--color-cta-border) !important;
   color: #000 !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .btn-primary:focus-visible {
@@ -497,11 +501,15 @@ summary.nav-link-parent::after {
   border-radius: 25px;
 }
 
-.btn-secondary:hover {
-  background: var(--color-cta-hover) !important;
+.btn-secondary:hover,
+.btn-secondary:focus-visible,
+a.btn-secondary:hover,
+a.btn-secondary:focus-visible {
+  background-color: transparent !important;
+  background-image: none !important;
   border-color: var(--color-cta-border) !important;
   color: #000 !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .btn-dark {
