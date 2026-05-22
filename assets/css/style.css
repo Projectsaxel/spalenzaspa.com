@@ -531,6 +531,38 @@ summary.nav-link-parent::after {
   box-shadow: var(--shadow-soft);
 }
 
+.card--with-image {
+  padding: 0;
+  overflow: hidden;
+}
+
+.card--with-image .card-thumb {
+  display: block;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.card--with-image .card-thumb img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.card--with-image .card-header,
+.card--with-image .card-body {
+  padding-inline: var(--space-lg);
+}
+
+.card--with-image .card-header {
+  padding-top: var(--space-lg);
+}
+
+.card--with-image .card-body {
+  padding-bottom: var(--space-lg);
+}
+
 .card-header {
   margin-bottom: var(--space-sm);
 }
@@ -721,5 +753,154 @@ summary.nav-link-parent::after {
 
 .hours-list li + li {
   margin-top: 0.15rem;
+}
+
+/* Home hero — imagem full width */
+.page-hero--with-image {
+  padding-top: 0;
+  background: var(--color-bg);
+}
+
+.home-hero-banner {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.home-hero-banner img {
+  width: 100%;
+  height: clamp(280px, 50vw, 560px);
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.home-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  background: linear-gradient(
+    to right,
+    rgba(42, 34, 30, 0.82) 0%,
+    rgba(42, 34, 30, 0.45) 42%,
+    rgba(42, 34, 30, 0.08) 68%,
+    rgba(42, 34, 30, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.home-hero-caption {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 2rem var(--gutter);
+  pointer-events: auto;
+}
+
+.home-hero-title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: min(520px, 55vw);
+  text-align: left;
+}
+
+.home-hero-title-main {
+  font-size: clamp(1.65rem, 3vw, 2.5rem);
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.home-hero-title-sub {
+  font-size: clamp(0.9rem, 1.6vw, 1.1rem);
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 640px) {
+  .home-hero-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(42, 34, 30, 0.88) 0%,
+      rgba(42, 34, 30, 0.6) 75%,
+      rgba(42, 34, 30, 0.25) 100%
+    );
+  }
+
+  .home-hero-title {
+    max-width: 85%;
+  }
+}
+
+.page-hero--with-image .container {
+  padding-top: var(--space-3xl);
+}
+
+/* Service pages — hero com imagem compacta */
+.page-hero--service {
+  padding-top: 0;
+  padding-bottom: var(--space-2xl);
+  background: var(--color-bg);
+}
+
+.service-hero-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.service-hero-banner img {
+  width: 100%;
+  height: clamp(180px, 22vw, 280px);
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.service-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(
+    to top,
+    rgba(42, 34, 30, 0.82) 0%,
+    rgba(42, 34, 30, 0.35) 55%,
+    rgba(42, 34, 30, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.service-hero-caption {
+  padding: 1rem var(--gutter) 1.25rem;
+  pointer-events: auto;
+}
+
+.service-hero-caption .eyebrow {
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 0.35rem;
+}
+
+.service-hero-caption .page-title {
+  color: #fff;
+  font-size: clamp(1.2rem, 2.2vw, 1.65rem);
+  line-height: 1.25;
+  margin: 0;
+  max-width: 52rem;
+}
+
+.page-hero--service > .container {
+  padding-top: var(--space-xl);
 }
 

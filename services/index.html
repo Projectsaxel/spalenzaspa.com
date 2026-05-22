@@ -8,9 +8,11 @@
       content="Explore all Spalenza Spa services in Danvers, MA including Japanese Head Spa, facials and peels, HydraFacial, massage therapy, laser hair removal, microblading, and more. Book online via Phorest."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="canonical" href="https://spalenzaspa.com/services.html" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="canonical" href="https://spalenzaspa.com/services" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/nav-modelo.css" />
 
     <script type="application/ld+json">
       {
@@ -50,56 +52,50 @@
           { "@type": "AdministrativeArea", "name": "North Shore MA" },
           { "@type": "AdministrativeArea", "name": "Massachusetts" }
         ],
-        "bookingUrl": "https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
+        "bookingUrl": "https://phorest.com/salon/spalenzaspa/book"
       }
     </script>
   </head>
 
   <body class="page-services">
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="index.html" class="brand">
-          <span class="brand-mark">S</span>
-          <span class="brand-text">
-            <span class="brand-name">Spalenza Spa</span>
-            <span class="brand-tagline">beauty salon &amp; wellness spa</span>
-          </span>
-        </a>
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
-        >
-          <span class="nav-toggle-line"></span>
-          <span class="nav-toggle-line"></span>
-        </button>
-        <nav class="site-nav" aria-label="Main navigation">
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about-us.html" class="nav-link">About Us</a></li>
-            <li><a href="services.html" class="nav-link is-active">Services</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-            <li>
-              <a
-                href="https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
-                class="nav-link nav-link-cta"
-                data-booking-type="general"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Book Now</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <nav class="navbar navbar-expand-lg bg-white">
+<div class="container flex-column text-center">
+<a class="navbar-brand mx-auto mb-2" href="/">
+<span class="navbar-brand-text">Spalenza Spa<small>beauty salon &amp; wellness spa</small></span>
+</a>
+<button class="navbar-toggler collapsed" type="button" data-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-center" id="main-nav">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="/about-us/">About Us</a></li>
+<li class="nav-item active"><a class="nav-link" href="/services/">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+<li class="nav-item btn-appointment"><a class="nav-link" href="https://phorest.com/salon/spalenzaspa/book" target="_blank" rel="noopener noreferrer">Book</a></li>
+</ul>
+</div>
+</div>
+</nav>
 
     <main>
-      <section class="page-hero">
+      <section class="page-hero page-hero--service">
+        <div class="service-hero-banner">
+          <img
+            src="/assets/img/banner/hero-services.jpg"
+            alt="Spa services at Spalenza Spa in Danvers, MA"
+            width="1920"
+            height="400"
+            loading="eager"
+          />
+          <div class="service-hero-overlay">
+            <div class="service-hero-caption container">
+              <p class="eyebrow">All Services • Danvers, Massachusetts</p>
+              <h1 class="page-title">Services at Spalenza Spa</h1>
+            </div>
+          </div>
+        </div>
         <div class="container">
-          <p class="eyebrow">All Services • Danvers, Massachusetts</p>
-          <h1 class="page-title">Services at Spalenza Spa</h1>
           <p class="page-intro">
             Browse every service we offer in one place—then book online in minutes.
             We serve guests in Danvers and across the North Shore with premium beauty
@@ -107,7 +103,7 @@
           </p>
           <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
             <a
-              href="https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
+              href="https://phorest.com/salon/spalenzaspa/book"
               class="btn btn-primary"
               data-booking-type="general"
               target="_blank"
@@ -150,11 +146,11 @@
                 The signature ritual that guests travel for. Explore service options and pricing.
               </p>
               <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <a href="japanese-head-spa-massachusetts.html" class="btn btn-secondary btn-sm"
+                <a href="/japanese-head-spa-massachusetts/" class="btn btn-secondary btn-sm"
                   >View details</a
                 >
                 <a
-                  href="https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
+                  href="https://phorest.com/salon/spalenzaspa/book"
                   class="btn btn-primary btn-sm"
                   data-service="japanese-head-spa"
                   target="_blank"
@@ -180,7 +176,7 @@
             <article class="card">
               <h3 class="card-title">Facial &amp; Skin Treatments Hub</h3>
               <p class="card-body">Explore the full skin menu in one place.</p>
-              <a href="facial-skin-treatments-danvers-ma.html" class="btn btn-secondary btn-sm"
+              <a href="/facial-skin-treatments-danvers-ma/" class="btn btn-secondary btn-sm"
                 >Explore hub</a
               >
             </article>
@@ -188,11 +184,11 @@
               <h3 class="card-title">HydraFacial</h3>
               <p class="card-body">Signature, Deluxe, and Platinum treatments plus add-ons.</p>
               <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <a href="hydrafacial-danvers-ma.html" class="btn btn-secondary btn-sm"
+                <a href="/hydrafacial-danvers-ma/" class="btn btn-secondary btn-sm"
                   >View details</a
                 >
                 <a
-                  href="https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
+                  href="https://phorest.com/salon/spalenzaspa/book"
                   class="btn btn-primary btn-sm"
                   data-service="hydrafacial"
                   target="_blank"
@@ -205,11 +201,11 @@
               <h3 class="card-title">Advanced Facials &amp; Chemical Peels</h3>
               <p class="card-body">VI Peel, dermaplaning, microchanneling, and more.</p>
               <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <a href="chemical-peels-facials-danvers-ma.html" class="btn btn-secondary btn-sm"
+                <a href="/chemical-peels-facials-danvers-ma/" class="btn btn-secondary btn-sm"
                   >View details</a
                 >
                 <a
-                  href="https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
+                  href="https://phorest.com/salon/spalenzaspa/book"
                   class="btn btn-primary btn-sm"
                   data-service="chemical-peels-facials"
                   target="_blank"
@@ -236,11 +232,11 @@
                 Swedish, deep tissue, prenatal, sports, lymphatic, and more—plus body treatments.
               </p>
               <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <a href="massage-body-wellness-danvers-ma.html" class="btn btn-secondary btn-sm"
+                <a href="/massage-body-wellness-danvers-ma/" class="btn btn-secondary btn-sm"
                   >View details</a
                 >
                 <a
-                  href="https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
+                  href="https://phorest.com/salon/spalenzaspa/book"
                   class="btn btn-primary btn-sm"
                   data-service="massage-body-wellness"
                   target="_blank"
@@ -266,7 +262,7 @@
             <article class="card">
               <h3 class="card-title">Hair Removal Hub</h3>
               <p class="card-body">Overview of waxing + laser options.</p>
-              <a href="hair-removal-danvers-ma.html" class="btn btn-secondary btn-sm"
+              <a href="/hair-removal-danvers-ma/" class="btn btn-secondary btn-sm"
                 >Explore hub</a
               >
             </article>
@@ -274,11 +270,11 @@
               <h3 class="card-title">Laser Hair Removal</h3>
               <p class="card-body">Single sessions, packages, and long‑term plans.</p>
               <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <a href="laser-hair-removal-danvers-ma.html" class="btn btn-secondary btn-sm"
+                <a href="/laser-hair-removal-danvers-ma/" class="btn btn-secondary btn-sm"
                   >View details</a
                 >
                 <a
-                  href="https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
+                  href="https://phorest.com/salon/spalenzaspa/book"
                   class="btn btn-primary btn-sm"
                   data-service="laser-hair-removal"
                   target="_blank"
@@ -304,7 +300,7 @@
             <article class="card">
               <h3 class="card-title">Eyes, Brows &amp; PMU Hub</h3>
               <p class="card-body">Lash lifts, tinting, shaping, and an overview of PMU.</p>
-              <a href="eyes-brows-permanent-makeup-danvers-ma.html" class="btn btn-secondary btn-sm"
+              <a href="/eyes-brows-permanent-makeup-danvers-ma/" class="btn btn-secondary btn-sm"
                 >Explore hub</a
               >
             </article>
@@ -312,11 +308,11 @@
               <h3 class="card-title">Microblading &amp; Permanent Makeup</h3>
               <p class="card-body">Brows + lip options with clear pricing.</p>
               <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <a href="microblading-danvers-ma.html" class="btn btn-secondary btn-sm"
+                <a href="/microblading-danvers-ma/" class="btn btn-secondary btn-sm"
                   >View details</a
                 >
                 <a
-                  href="https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
+                  href="https://phorest.com/salon/spalenzaspa/book"
                   class="btn btn-primary btn-sm"
                   data-service="microblading"
                   target="_blank"
@@ -340,7 +336,7 @@
             <article class="card">
               <h3 class="card-title">Injectables &amp; Wellness Hub</h3>
               <p class="card-body">Botox, lip filler, and wellness injections overview.</p>
-              <a href="injectables-wellness-danvers-ma.html" class="btn btn-secondary btn-sm"
+              <a href="/injectables-wellness-danvers-ma/" class="btn btn-secondary btn-sm"
                 >Explore hub</a
               >
             </article>
@@ -360,11 +356,11 @@
               <h3 class="card-title">Spa Packages &amp; Membership</h3>
               <p class="card-body">Package pricing, membership value, and gift card options.</p>
               <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <a href="spa-packages-membership-danvers-ma.html" class="btn btn-secondary btn-sm"
+                <a href="/spa-packages-membership-danvers-ma/" class="btn btn-secondary btn-sm"
                   >View details</a
                 >
                 <a
-                  href="https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
+                  href="https://phorest.com/salon/spalenzaspa/book"
                   class="btn btn-primary btn-sm"
                   data-service="spa-packages-membership"
                   target="_blank"
@@ -413,9 +409,9 @@
               <h3 class="card-title">Men’s Spa Page</h3>
               <p class="card-body">Men’s package, massage, facials, and head spa options.</p>
               <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <a href="mens-spa-danvers-ma.html" class="btn btn-secondary btn-sm">View details</a>
+                <a href="/mens-spa-danvers-ma/" class="btn btn-secondary btn-sm">View details</a>
                 <a
-                  href="https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
+                  href="https://phorest.com/salon/spalenzaspa/book"
                   class="btn btn-primary btn-sm"
                   data-service="mens-spa"
                   target="_blank"
@@ -437,14 +433,14 @@
             </p>
             <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
               <a
-                href="https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
+                href="https://phorest.com/salon/spalenzaspa/book"
                 class="btn btn-primary"
                 data-booking-type="general"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Start Your Booking</a
               >
-              <a href="contact.html" class="btn btn-secondary">Contact</a>
+              <a href="/contact/" class="btn btn-secondary">Contact</a>
             </div>
           </div>
         </div>
@@ -484,10 +480,10 @@
         <div class="footer-column">
           <h4 class="footer-heading">Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about-us/">About Us</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/contact/">Contact</a></li>
           </ul>
         </div>
         <div class="footer-column">
@@ -532,7 +528,7 @@
           <ul class="footer-links">
             <li>
               <a
-                href="https://www.phorest.com/salon/spalenzaspa/book/serviceselection"
+                href="https://phorest.com/salon/spalenzaspa/book"
                 data-booking-type="general"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -567,10 +563,11 @@
       </div>
     </footer>
 
-    <script src="assets/js/navigation.js"></script>
-    <script src="assets/js/faq.js"></script>
-    <script src="assets/js/booking-config.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/nav-modelo.js"></script>
+            <script src="/assets/js/navigation.js"></script>
+    <script src="/assets/js/faq.js"></script>
+    <script src="/assets/js/booking-config.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
 

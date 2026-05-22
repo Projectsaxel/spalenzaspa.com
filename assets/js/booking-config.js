@@ -10,7 +10,7 @@ If a service URL is blank, the general booking URL will be used automatically.
   "use strict";
 
   var PHOREST_GENERAL_BOOKING =
-    "https://www.phorest.com/salon/spalenzaspa/book/serviceselection";
+    "https://phorest.com/salon/spalenzaspa/book";
   var PHOREST_MEMBERSHIP = "https://www.phorest.com/salon/spalenzaspa/buy/membership";
   var PHOREST_GIFT_CARDS = "https://gift-cards.phorest.com/salons/spalenzaspa";
 

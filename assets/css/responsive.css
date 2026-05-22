@@ -76,6 +76,15 @@
     padding-block: 2.5rem;
   }
 
+  .page-hero--service {
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+
+  .service-hero-banner img {
+    height: clamp(160px, 32vw, 220px);
+  }
+
   .page-title {
     font-size: 1.75rem;
   }
