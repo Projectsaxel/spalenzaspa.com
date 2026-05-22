@@ -203,10 +203,10 @@
 
 .navbar .navbar-nav .nav-item.btn-appointment .nav-link:hover,
 .navbar .navbar-nav .nav-item.btn-appointment .nav-link:focus-visible {
-  color: #000 !important;
-  background-color: transparent !important;
+  color: #fff !important;
+  background-color: #000 !important;
   background-image: none !important;
-  border-color: #7d3c92 !important;
+  border-color: #000 !important;
   text-decoration: none !important;
 }
 
@@ -270,7 +270,7 @@
   }
 }
 
-/* Prioridade máxima: hover dos botões com texto PRETO (não branco) */
+/* Prioridade máxima: hover dos botões com fundo PRETO */
 a.btn.btn-primary:hover,
 a.btn.btn-primary:focus,
 a.btn.btn-primary:focus-visible,
@@ -283,6 +283,9 @@ a.btn.btn-secondary:active,
 .btn.btn-secondary:hover,
 .btn-primary:hover,
 .btn-secondary:hover {
-  color: #000 !important;
-  -webkit-text-fill-color: #000 !important;
+  background-color: #000 !important;
+  background-image: none !important;
+  border-color: #000 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
 }

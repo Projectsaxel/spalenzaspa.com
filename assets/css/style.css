@@ -10,7 +10,7 @@
   --color-text-body: #5a4f47;
   --color-border: #ddd2c7;
   --color-cta: #938350;
-  --color-cta-hover: transparent;
+  --color-cta-hover: #000;
   --color-cta-border: #7d3c92;
   --color-white: #ffffff;
 
@@ -487,11 +487,11 @@ a.btn-primary:active,
 a.btn.btn-primary:hover,
 a.btn.btn-primary:focus-visible,
 a.btn.btn-primary:active {
-  background-color: #938350 !important;
+  background-color: #000 !important;
   background-image: none !important;
-  border-color: var(--color-cta-border) !important;
-  color: #000 !important;
-  -webkit-text-fill-color: #000 !important;
+  border-color: #000 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
   text-decoration: none !important;
 }
 
@@ -516,11 +516,11 @@ a.btn-secondary:active,
 a.btn.btn-secondary:hover,
 a.btn.btn-secondary:focus-visible,
 a.btn.btn-secondary:active {
-  background-color: #938350 !important;
+  background-color: #000 !important;
   background-image: none !important;
-  border-color: var(--color-cta-border) !important;
-  color: #000 !important;
-  -webkit-text-fill-color: #000 !important;
+  border-color: #000 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
   text-decoration: none !important;
 }
 
