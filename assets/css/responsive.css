@@ -116,6 +116,16 @@
     min-height: 280px;
   }
 
+  .gift-banner-media {
+    flex: none;
+    max-width: none;
+    width: 100%;
+  }
+
+  .gift-banner-media img {
+    min-height: 240px;
+  }
+
   .grid--3,
   .grid--2 {
     grid-template-columns: 1fr;

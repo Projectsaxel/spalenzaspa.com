@@ -220,6 +220,35 @@ main {
   margin: 0;
 }
 
+.split--gift-banner {
+  align-items: center;
+  gap: var(--space-2xl);
+}
+
+.gift-banner-media {
+  flex: 0 1 42%;
+  max-width: 480px;
+  margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  line-height: 0;
+  box-shadow: var(--shadow-soft);
+}
+
+.gift-banner-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.gift-banner-content {
+  flex: 1;
+  min-width: 0;
+}
+
 /* Header */
 .site-header {
   position: sticky;
