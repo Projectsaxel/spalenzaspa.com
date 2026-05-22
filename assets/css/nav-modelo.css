@@ -160,12 +160,9 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.navbar .navbar-nav .nav-item:hover:not(.btn-appointment)::before,
-.navbar .navbar-nav .nav-item:hover:not(.btn-appointment)::after,
-.navbar .navbar-nav .nav-item.active:not(.btn-appointment)::before,
-.navbar .navbar-nav .nav-item.active:not(.btn-appointment)::after {
-  opacity: 1;
-  visibility: visible;
+.navbar .navbar-nav .nav-item:not(.btn-appointment)::before,
+.navbar .navbar-nav .nav-item:not(.btn-appointment)::after {
+  display: none !important;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -183,12 +180,14 @@
   display: inline-block;
 }
 
-.navbar .navbar-nav .nav-item.active:not(.btn-appointment) .nav-link,
-.navbar .navbar-nav .nav-item:not(.btn-appointment) .nav-link:hover {
+.navbar .navbar-nav .nav-item.active:not(.btn-appointment) .nav-link {
   color: #938350 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
 }
 
 .navbar .navbar-nav .nav-item:not(.btn-appointment) .nav-link:hover {
+  color: #938350 !important;
   text-decoration: underline !important;
   text-underline-offset: 4px;
 }

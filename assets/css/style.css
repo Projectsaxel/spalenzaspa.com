@@ -573,6 +573,10 @@ a.btn.btn-secondary:active {
   text-align: center;
 }
 
+.section-header--center .section-lead {
+  margin-inline: auto;
+}
+
 /* Cards / grids */
 .grid {
   display: grid;
