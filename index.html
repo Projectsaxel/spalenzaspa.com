@@ -80,19 +80,39 @@
     <main>
       <!-- 1. Hero -->
       <section class="page-hero page-hero--with-image">
-        <div class="home-hero-banner">
+        <div class="hero-band">
           <img
-            src="assets/img/banner/hero-spa-treatment.jpg"
-            alt="Guest receiving a relaxing spa treatment at Spalenza Spa in Danvers, MA"
-            width="1920"
-            height="700"
+            class="hero-band__bg"
+            src="assets/img/ninevea/Main-Banner-1.jpg"
+            alt=""
+            aria-hidden="true"
           />
-          <div class="home-hero-overlay">
-            <div class="home-hero-caption">
-              <h1 class="home-hero-title">
-                <span class="home-hero-title-main">Spalenza Spa</span>
-                <span class="home-hero-title-sub">Beauty Salon &amp; Wellness Spa in Danvers, MA</span>
+          <div class="hero-band__overlay"></div>
+          <div class="hero-band__inner">
+            <div class="hero-band__content">
+              <span class="hero-band__eyebrow">Danvers, MA • North Shore</span>
+              <h1 class="hero-band__title">
+                Beauty Salon &amp;
+                <span class="accent">Wellness Spa</span> in Danvers
               </h1>
+              <p class="hero-band__text">
+                Japanese Head Spa, advanced facials, massage therapy, and
+                laser hair removal — thoughtful, multicultural care that
+                balances visible results with deep relaxation.
+              </p>
+              <div class="hero-band__actions">
+                <a
+                  href="https://phorest.com/salon/spalenzaspa/book"
+                  class="btn btn-primary"
+                  data-booking-type="general"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Book Now</a
+                >
+                <a href="/services/" class="btn btn-outline-light"
+                  >Explore Services</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -152,6 +172,55 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2b. Feature highlights -->
+      <section class="feature-row" aria-label="What we offer">
+        <div class="feature-row__inner">
+          <div class="feature">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="20" r="13" />
+                <path d="M24 33c-8 0-13 4-13 10M24 33c8 0 13 4 13 10" />
+                <path d="M18 18c1.5-1.5 4-1.5 5.5 0M24.5 18c1.5-1.5 4-1.5 5.5 0" />
+                <path d="M20 25c1.5 2 6.5 2 8 0" />
+              </svg>
+            </div>
+            <h3 class="feature__title">Japanese Head Spa</h3>
+            <p class="feature__text">A sensory scalp ritual for deep relaxation and healthier‑feeling hair.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6c6 8 11 13 11 20a11 11 0 0 1-22 0c0-7 5-12 11-20Z" />
+                <path d="M19 27a5 5 0 0 0 5 5" />
+              </svg>
+            </div>
+            <h3 class="feature__title">Facials &amp; Skin</h3>
+            <p class="feature__text">HydraFacial, chemical peels, and advanced skin treatments.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 40c0-10 6-18 15-21-3 12-8 18-15 21Z" />
+                <path d="M24 40c0-10-6-18-15-21 3 12 8 18 15 21Z" />
+                <path d="M24 40V22" />
+              </svg>
+            </div>
+            <h3 class="feature__title">Massage &amp; Body</h3>
+            <p class="feature__text">Therapeutic massage and body wellness that melt away tension.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6v8M24 34v8M6 24h8M34 24h8M12 12l5 5M31 31l5 5M36 12l-5 5M17 31l-5 5" />
+                <circle cx="24" cy="24" r="6" />
+              </svg>
+            </div>
+            <h3 class="feature__title">Laser Hair Removal</h3>
+            <p class="feature__text">Long‑term smoothness with comfortable, effective sessions.</p>
           </div>
         </div>
       </section>
@@ -441,7 +510,7 @@
           <div class="split split--testimonials">
             <figure class="testimonials-media">
               <img
-                src="assets/img/banner/hero-spa-treatment.jpg"
+                src="assets/img/banner/hero-spa-treatment.png"
                 alt="Relaxed guest enjoying spa treatment at Spalenza Spa in Danvers, MA"
                 width="600"
                 height="800"
@@ -754,6 +823,7 @@
       <div class="footer-bottom">
         <div class="container footer-bottom-inner">
           <small>&copy; Spalenza Spa, LLC.</small>
+          <small class="footer-legal-links"><a href="/privacy-policy/">Privacy</a> &middot; <a href="/terms-of-use/">Terms</a> &middot; <a href="/cookie-policy/">Cookies</a></small>
         </div>
       </div>
     </footer>

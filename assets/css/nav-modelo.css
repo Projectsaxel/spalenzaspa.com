@@ -5,9 +5,9 @@
 
 .navbar.bg-white {
   width: 100%;
-  padding: 20px 0;
-  background: #fff !important;
-  font-family: "Poppins", sans-serif;
+  padding: 18px 0;
+  background: #142802 !important;
+  font-family: "Work Sans", sans-serif;
   position: sticky;
   top: 0;
   z-index: 1030;
@@ -15,26 +15,28 @@
 
 .navbar .container.flex-column {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
+  justify-content: space-between;
+  text-align: left;
   width: 100%;
-  max-width: 1140px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 
 .navbar .navbar-brand {
   padding: 4px 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   text-decoration: none;
 }
 
 .navbar .navbar-brand-text {
+  font-family: "Marcellus", Georgia, serif;
   font-size: 28px;
-  font-weight: 700;
-  color: #333;
-  letter-spacing: 0.04em;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   line-height: 1.2;
   display: inline-block;
@@ -42,12 +44,12 @@
 
 .navbar .navbar-brand-text small {
   display: block;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.2em;
-  color: #929292;
+  color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 .navbar .navbar-toggler {
@@ -62,7 +64,7 @@
   display: inline-block;
   width: 40px;
   height: 3px;
-  background: #000;
+  background: #fff;
   position: relative;
   transition: all 0.3s ease-out;
 }
@@ -74,7 +76,7 @@
   top: -11px;
   width: 100%;
   height: 3px;
-  background: #000;
+  background: #fff;
   border-radius: 4px;
   transition: all 0.35s ease-out;
   backface-visibility: hidden;
@@ -87,7 +89,7 @@
   bottom: -11px;
   width: 100%;
   height: 3px;
-  background: #000;
+  background: #fff;
   border-radius: 4px;
   transition: all 0.35s ease-out;
   backface-visibility: hidden;
@@ -123,7 +125,7 @@
 
 .navbar .navbar-nav .nav-item {
   position: relative;
-  margin-left: 15px;
+  margin-left: 32px;
 }
 
 .navbar .navbar-nav .nav-item:first-child {
@@ -166,8 +168,8 @@
 }
 
 .navbar .navbar-nav .nav-link {
-  font-size: 16px !important;
-  color: #777 !important;
+  font-size: 15px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
   line-height: 24px !important;
   font-weight: 400 !important;
   text-transform: uppercase !important;
@@ -181,36 +183,37 @@
 }
 
 .navbar .navbar-nav .nav-item.active:not(.btn-appointment) .nav-link {
-  color: #938350 !important;
+  color: #f47f40 !important;
   text-decoration: underline !important;
   text-underline-offset: 4px;
 }
 
 .navbar .navbar-nav .nav-item:not(.btn-appointment) .nav-link:hover {
-  color: #938350 !important;
+  color: #f47f40 !important;
   text-decoration: underline !important;
   text-underline-offset: 4px;
 }
 
 .navbar .navbar-nav .nav-item.btn-appointment {
-  margin-left: 15px;
+  margin-left: 36px;
 }
 
 .navbar .navbar-nav .nav-item.btn-appointment .nav-link {
-  background: #938350 !important;
-  color: #fff !important;
-  padding: 11px 30px !important;
-  border-radius: 25px !important;
+  background: #fff !important;
+  color: #142802 !important;
+  padding: 11px 28px !important;
+  border-radius: 3px !important;
+  letter-spacing: 0.12em;
   text-transform: uppercase !important;
-  border: 2px solid #7d3c92 !important;
+  border: 1px solid #fff !important;
 }
 
 .navbar .navbar-nav .nav-item.btn-appointment .nav-link:hover,
 .navbar .navbar-nav .nav-item.btn-appointment .nav-link:focus-visible {
   color: #fff !important;
-  background-color: #000 !important;
+  background-color: #f47f40 !important;
   background-image: none !important;
-  border-color: #000 !important;
+  border-color: #f47f40 !important;
   text-decoration: none !important;
 }
 
@@ -257,20 +260,26 @@
 
   .navbar .navbar-collapse {
     display: block !important;
+    width: auto;
+    flex: 1;
+  }
+
+  .navbar .navbar-nav {
+    justify-content: flex-end;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .navbar .navbar-nav .nav-item {
-    margin-left: 5px;
+    margin-left: 18px;
   }
 
   .navbar .navbar-nav .nav-link {
-    font-size: 15px !important;
+    font-size: 14px !important;
   }
 
   .navbar .navbar-nav .nav-item.btn-appointment {
-    margin-left: 5px;
+    margin-left: 18px;
   }
 }
 
