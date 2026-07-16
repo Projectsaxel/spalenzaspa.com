@@ -728,13 +728,13 @@ a.btn.btn-secondary:active {
 }
 
 .card-subtitle {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   color: var(--color-text-body);
   margin: 0;
 }
 
 .card-body {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
 }
 
 .card-meta {
@@ -756,7 +756,7 @@ a.btn.btn-secondary:active {
   border-radius: var(--radius-pill);
   border: 1px solid var(--color-border);
   padding: 0.4rem 0.9rem;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   background: rgba(255, 255, 255, 0.9);
   color: var(--color-text-body);
 }
@@ -805,7 +805,7 @@ a.btn.btn-secondary:active {
 
 .faq-answer {
   padding: 0 1rem 0.9rem;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   color: var(--color-text-body);
   display: none;
 }
@@ -886,7 +886,7 @@ a.btn.btn-secondary:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   color: rgba(255, 255, 255, 0.55);
 }
 
@@ -895,7 +895,7 @@ a.btn.btn-secondary:active {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
 }
 
 .location-block strong {
@@ -906,7 +906,7 @@ a.btn.btn-secondary:active {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   color: var(--color-text-body);
 }
 
@@ -1204,7 +1204,7 @@ a.btn-outline-light:hover {
 }
 
 .feature__text {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   color: var(--color-text-body);
   margin: 0;
   line-height: 1.6;
